@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-mpvf
+  namespace: alexeykazakov-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:395015d02ac407f553bfc57b0bcfc95e450726d1b106e8b5986c6003c86e9797
+        name: my-go
+        resources: {}
+status: {}
